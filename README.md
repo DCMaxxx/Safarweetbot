@@ -12,7 +12,8 @@ I've only used it with the latest version of Safari (*Version 7.0.2 (9537.74.9)*
 and Tweetbot (*Version 1.5 (150002)*).
 
 However, Tweetbot supports URL schemes since *Version 1.0.2*, and I think older
-versions of Safari should work too. I'd love to hear feedback though :-).
+versions of Safari should work too - and I have nothing but my **HUGE and IMPRESSIVE** :rolleye: knowledge of JS and Safari extensions to coroborate this.
+I'd love to hear feedback though :-).
 
 If you want to make it work with your favorite browser, feel free to download
 the source code and tweak it as you want (see *Licence* below).
@@ -32,8 +33,15 @@ You can access Safarweetbot's settings through Safari's preferences :
 
 Current options :
 
-* Automatically close window : closes the window once Tweetbot has opened the
+* **Automatically close window :** closes the window once Tweetbot has opened the
 link.
+
+
+Contribution
+-----------
+
+I've only done URL scheme that I often use - username, statuses.
+There are [a lot of different schemes](http://tapbots.com/blog/development/tweetbot-url-scheme) and if you want to implement it, please make a pull request :-).
 
 
 Licence
