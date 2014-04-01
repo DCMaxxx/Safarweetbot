@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>global HTML page</title>
+<script type="text/javascript">
+
+function receivedMessage(event) {
+	if (event.name === "safarweetbot-settings-request") {
+		event.target.page.dispatchMessage("safarweetbot-settings-response", {
+			"closePage": safari.extension.settings.closePage
+		});
+	} else if (event.name == "safarweetbot-actions-closePage") {
+		event.target.browserWindow.activeTab.close();
+	}
+}
+
+safari.application.addEventListener("message", receivedMessage, false);
+
+</script>
+</head>
+<body>
+</body>
+</html>
